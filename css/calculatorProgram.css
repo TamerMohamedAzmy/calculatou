@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg,#0a0a0ad0,rgba(17, 182, 204, 0.933));
+
+}
+#calculator{
+    background-color: hsl(180, 26%, 25%);
+    max-width: 350px;
+    max-height: 550px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-top: 20px;
+    box-shadow: -3px -3px 20px rgb(255,255,255,0.2);
+
+}
+#display{
+    width: 90%;
+    height: 3rem;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    border: none;
+    outline: none;
+    background-color: hsla(0, 0%, 20%, 0.892);
+    color: white;
+    box-shadow:inset -5px -5px 12px #312b2b,
+                 inset 5px 5px 12px  rgba(10, 9, 8, 0.621);
+}
+#keys{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 20px;
+     padding: 25px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background: hsl(0, 0%, 18%);
+    box-shadow: -3px -3px 10px rgb(255,255,255,0.2);
+    color: #f5efef;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.my-Special-Button{
+    background-color: rgb(36, 34, 33);
+    /* background-color: rgba(176, 145, 22, 0.792); */
+}
